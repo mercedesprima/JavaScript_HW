@@ -46,11 +46,11 @@
         let number = Number(prompt("Введите любое целое число до 1000000."));
 
         let thousands = (number - number % 1000) / 1000;
-        number = number % 1000;
-        let hundreds = (number - number % 100) / 100
-        number = number % 100;
-        let tens = (number - number % 10) / 10;
-        let units = number % 10;
+        number1 = number % 1000;
+        let hundreds = (number1 - number1 % 100) / 100
+        number2 = number1 % 100;
+        let tens = (number2 - number2 % 10) / 10;
+        let units = number2 % 10;
 
         console.log(`В числе ${number}:
     тысяч: ${thousands},
