@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+</head>
+
+<body>
+    <script>
+        // Задание 1.
+        let num1 = Number(prompt("Введите первое число"));
+        let num2 = Number(prompt("Введите второе число"));
+        if (num1 <= 1) {
+            console.log("Первое введенное число меньше или равно 1")
+        } else {
+            console.log("Первое введенное число больше 1")
+        }
+        if (num2 >= 3) {
+            console.log("Второе введенное число больше или равно 3.")
+        } else {
+            console.log("Второе введенное число меньше 3.")
+        }
+        // Задание 2.
+
+        let test = true;
+        console.log((test === true) ? '+++' : '---');
+
+        // Задание 3.
+
+        let day = Number(prompt("Введите число от 1 до 31."));
+        if (day >= 1 && day <= 10) {
+            console.log(`${day} относится к первой декаде`);
+        } else if (day >= 11 && day <= 20) {
+            console.log(`${day} относится ко второй декаде`);
+        }
+        else if (day >= 21 && day <= 31) {
+            console.log(`${day} относится к третьей декаде`);
+        }
+        else {
+            console.log("Введите число от 1 до 31.")
+        }
+        // Задание 4.
+
+        let number = Number(prompt("Введите любое целое число до 1000000."));
+
+        let thousands = (number - number % 1000) / 1000;
+        number = number % 1000;
+        let hundreds = (number - number % 100) / 100
+        number = number % 100;
+        let tens = (number - number % 10) / 10;
+        let units = number % 10;
+
+        console.log(`В числе ${number}:
+    тысяч: ${thousands},
+    сотен: ${hundreds},
+    десятков: ${tens},
+    единиц: ${units}`)
+
+    </script>
+
+</body>
+
+</html>
