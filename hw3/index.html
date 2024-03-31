@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3</title>
+</head>
+<body>
+    <script>
+        // Задание 1
+function cubing(num) {
+    return Math.pow(num, 3);
+}
+console.log(cubing(2,3) + cubing(3,3));
+
+        // Задание 2
+
+let number = Number(prompt('Введите сумму вашей зарплаты'));
+
+function netSalary(number) {
+    return number * 0.87
+}
+console.log(netSalary(number));
+
+
+        // Задание 3
+let num1 = Number(prompt('Введите 1-е число:'));
+let num2 = Number(prompt('Введите 2-е число:'));
+let num3 = Number(prompt('Введите 3-е число:'));
+maxNumber(num1, num2, num3);
+function maxNumber(num1, num2, num3) {
+
+    if (num1>num2 && num1>num3) {
+        console.log(`${num1} максимальное число`);
+    } else if(num2>num1 && num2>num3){
+        console.log(`${num2} максимальное число`);
+    }else{
+        console.log(`${num3} максимальное число`);
+    }
+}
+        //Задание 4
+let number1 = Number(prompt('Введите 1-е число:'));
+let number2 = Number(prompt('Введите 2-е число:'));
+
+function sum (number1, number2){
+    return number1 + number2;
+}
+function substract (number1, number2){
+    if (number1 > number2) {
+        return number1 - number2; 
+    } else {
+        return number2 - number1;  
+    }
+}
+function multiply (number1, number2){
+    return number1 * number2;
+}
+function devide (number1, number2){
+    if (number1 > number2) {
+        return number1 / number2; 
+    } else {
+        return number2 / number1;  
+    }
+}
+console.log(sum(number1, number2), substract(number1, number2), multiply(number1, number2), devide(number1, number2));
+    </script>
+</body>
+</html>
